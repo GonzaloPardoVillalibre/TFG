@@ -30,3 +30,5 @@ framework/pre-processing/tunning-examples/Harvard-tunning-example/framework-inpu
 !framework/pre-processing/tunning-examples/Harvard-tunning-example/framework-input-dataset/.gitkeep
 framework/pre-processing/tunning-examples/Harvard-tunning-example/original-dataset/*
 !framework/pre-processing/tunning-examples/Harvard-tunning-example/original-dataset/.gitkeep
+
+framework/train/ensemble/models/*
