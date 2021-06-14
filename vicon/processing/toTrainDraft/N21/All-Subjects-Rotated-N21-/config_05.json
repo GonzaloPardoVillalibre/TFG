@@ -1,0 +1,50 @@
+{
+    "neural-network": "N21",
+    "no-augmentation": true,
+    "movements": [
+        "FigureofEight",
+        "HighKneeJog",
+        "Jog",
+        "JumpingJacks",
+        "SpeedSkater",
+        "Static",
+        "Zigzag",
+        "Walk"
+    ],
+    "train-subjects": [
+        "S01",
+        "S02",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10"
+    ],
+    "validation-subjects": [
+        "S04"
+    ],
+    "test-subjects": [
+        "S05"
+    ],
+    "callbacks": {
+        "enabled": true,
+        "list": [
+            {
+                "type": "modelCheckPoint",
+                "save_weights_only":true,
+                "monitor": "loss",
+                "mode":"min",
+                "save_best_only":true
+            }
+        ]
+    },
+    "input-rows": 350,
+    "input-columns": 84,
+    "channels": 1,
+    "batch-size": 70,
+    "train-steps": 81,
+    "validation-steps": 81,
+    "test-steps": 81,
+    "epochs": 30,
+    "comments": "K-Fold for neural network model 5. Try with a deeper network as I assume no much noise in measures."  
+}
