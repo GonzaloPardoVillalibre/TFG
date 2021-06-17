@@ -35,4 +35,3 @@ framework/train/ensemble/models
 framework/train/toTrain
 framework/train/toTrainDraft/Archive-ics-tunning-examples/*
 framework/train/toTrainDraft/Harvard-tunning-examples/*
-framework/pre-processing/tunning-examples/Archive-ics-tunning-example/calibration

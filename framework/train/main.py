@@ -8,6 +8,7 @@ main_path = '/TFG'
 cfg_files_path = main_path + '/framework/train/toTrain'
 outcome = main_path + '/framework/train/trainOutcomes'
 _, folders, files = next(os.walk(cfg_files_path))
+files.remove('.gitkeep')
 
 ############################################################
 #  AUXILIAR FUNCION TO MANAGE KFOLD OR INDEPENDENT TRAINS  #

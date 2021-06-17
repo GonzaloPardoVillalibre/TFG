@@ -1,6 +1,7 @@
 import tensorflow as tf
 import utils.utils as nnUtils
 from tensorflow.keras import layers
+from keras.optimizers import Adam
 
 def load_model(input_rows:int, input_columns:int, channels:int, movements_number:int):
 
@@ -27,7 +28,7 @@ def load_model(input_rows:int, input_columns:int, channels:int, movements_number
 
     # model.summary()
 
-    model.compile(loss = "sparse_categorical_crossentropy", optimizer = "adam", metrics = ["accuracy"])
+    model.compile(loss = "sparse_categorical_crossentropy", optimizer = Adam(lr= 10e-3), metrics = ["accuracy"])
 
     return model
 
